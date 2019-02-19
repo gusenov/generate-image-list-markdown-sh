@@ -48,7 +48,7 @@ for my_file in ${my_files[@]}; do
   extension="${my_file##*.}"
   filename="${my_file%.*}"
   if [ "$extension" == "png" ]; then
-	   echo -e "- [$filename]("$(urlencode "$my_file")")\n"
+	   echo -e "![$filename]("$(urlencode "$my_file")")\n"
   fi
 done
 
